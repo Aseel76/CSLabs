@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class lab5 {
+
+public static void main(String[] args) {
+	
+Scanner input = new Scanner(System.in);
+
+System.out.println("Enter the first positive number: ");  
+
+int num1 =  input.nextInt(); 
+
+while (num1<0) {          
+System.out.println("You enterd a negative number");
+System.out.println("REenter a positive number");
+ num1 =  input.nextInt(); 
+}
+	
+System.out.println("Enter the second positive number: ");
+int num2 =  input.nextInt();    
+
+while(num2<0) {
+System.out.println("you entered a nagative number");
+System.out.println("REenter a positive number");
+ num2 =  input.nextInt(); 
+
+	}
+System.out.println("The result: "+ num1 + " + "+  num2 +" = "+(num1+num2));
+
+
+}
+}
